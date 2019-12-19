@@ -12,7 +12,6 @@
     "dyndns": "./index.js"
   },
   "dependencies": {
-    "deasync": "^0.1.10",
     "figlet": "^1.2.0",
     "request": "^2.81.0"
   }
