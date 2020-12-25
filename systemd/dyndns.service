@@ -1,0 +1,12 @@
+[Unit]
+Description=Update Publict IP for home.kra.hn
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/bin/bash -c '/usr/bin/node index.js --config your-config.json'
+WorkingDirectory=/path/to/dyndns
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=dyndns

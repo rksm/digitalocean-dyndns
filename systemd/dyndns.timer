@@ -1,0 +1,10 @@
+[Unit]
+Description=Update IP timer
+After=network.target
+
+[Timer]
+OnBootSec=1min
+OnCalendar=*:0/15
+
+[Install]
+WantedBy=timers.target

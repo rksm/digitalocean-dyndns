@@ -1,3 +1,19 @@
+Cloned from https://gitlab.no/rune/dyndns/
+
+# Installation with systemd
+
+Modify `dyndns.service`
+- change user
+- point it to your config
+- change directory
+- make sure node.js is installed
+
+Copy `dyndns.service` and `dyndns.timer` to `/etc/systemd/system`.
+Then `systemctl enable dyndns.timer` and `systemctl start dyndns.timer`.
+
+
+-----------------------------------------------
+
 # DYNDNS
 DYNDNS is a small Node CLI (command line) app that updates DNS records on you Digital Ocean account.
 
